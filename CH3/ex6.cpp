@@ -7,6 +7,9 @@ int main()
 {
 	unsigned short first{ 0 };
 	unsigned short sec{ 0 };
+	unsigned int a = 100;
+
+	std::cout << (a << 3) << "\n";
 
 	std::print("Enter two ints for slot A and B: ");
 	std::cin >> first >> sec;
