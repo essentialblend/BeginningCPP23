@@ -6,3 +6,5 @@ Currently complete:
 - Chapter 1: Basic Ideas
 - Chapter 2: Introducing Fundamental Types of Data
 - Chapter 3: Working with Fundamental Data Types
+- Chapter 4: Making Decisions.
+- Chapter 5: Arrays and Loops.
