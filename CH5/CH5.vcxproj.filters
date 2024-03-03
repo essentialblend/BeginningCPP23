@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex6.cpp">
+    <ClCompile Include="ex8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ex1.cpp">
@@ -24,10 +24,16 @@
     <ClCompile Include="ex2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ex3-4.cpp">
+    <ClCompile Include="ex3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ex5.cpp">
+    <ClCompile Include="ex4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

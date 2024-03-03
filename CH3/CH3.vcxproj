@@ -19,6 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ex1.cpp" />
+    <ClCompile Include="ex2.cpp" />
+    <ClCompile Include="ex3-4.cpp" />
+    <ClCompile Include="ex5.cpp" />
     <ClCompile Include="ex6.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
