@@ -14,3 +14,8 @@ Currently complete:
 - Chapter 8: Defining Functions
 - Chapter 9: Vocabulary Types
 - Chapter 10: Function Templates
+- Chapter 11: Modules and Namespaces
+- Chapter 12: Defining Your Own Data Types
+- Chapter 13: Operator Overloading
+- Chapter 14: Inheritance
+- Chapter 15: Polymorphism
