@@ -10,8 +10,6 @@ public:
 
 	LinkedList(const LinkedList& l);
 
-	LinkedList& operator=(LinkedList other); 
-
 	// Inserts: pushFront, pushBack, (at/after node)
 	void pushFront(const T& val);
 	void pushBack(const T& val);
@@ -24,19 +22,17 @@ public:
 
 	// Checks: isEmpty.
 	bool isEmpty() const;
-	
-	
-	T& getFront();
-	const T& getFront() const;
 
-	T& getBack();
-	const T& getBack() const;
+	const T& getHead() const;
+
+	const T& getTail() const;
 
 	std::size_t getSize() const noexcept;
 	void swap(LinkedList& other) noexcept;
 
 	// Nested iterator.
 	class Iterator;
+
 	Iterator iterateFromHead() const;
 	Iterator iterateFromTail() const;
 
@@ -251,7 +247,7 @@ LinkedList<T>::~LinkedList()
 }
 
 // Non-members.
-export template<typename T>
+template<typename T>
 void swap(LinkedList<T>& first, LinkedList<T>& second)
 {
 	first.swap(second);

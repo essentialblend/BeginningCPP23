@@ -3,22 +3,29 @@
   Extra: It shouldn’t be hard to make push_back() strongly exception-safe. that is, if any operation during push_back() should go wrong and throw an exception, make sure that no memory is leaked and the original Array<> is left as is, discarding the new element.*/
 
 import trial_array;
+import std;
+
+// Construct an Array<> of a given size, filled with some arbitrary string data
+Array<std::string> buildStringArray(const std::size_t size)
+{
+	Array<std::string> result{ size };
+	for (std::size_t i{}; i < size; ++i)
+		result[i] = "You should learn from your competitor, but never copy. Copy and you die.";
+	return result;
+}
 
 int main()
 {
-	// With init size.
-	Array<int> arrayTrial{ 4 };
-	// With 0 elem.
-	Array<double> arrayDoubleTrial;
-
-	for (std::size_t i{}; i < 5; i++)
-	{
-		arrayDoubleTrial.pushBack(i * 5);
-	}
+	const std::size_t numArrays{ 10 }; // Fill 10 Arrays with 1,000 strings each
 	
-
-	for (std::size_t i{}; i < arrayDoubleTrial.getSize(); i++)
+	const std::size_t numStringsPerArray{ 1'000 };
+	
+	std::vector<Array<std::string>> vectorOfArrays;
+	
+	vectorOfArrays.reserve(numArrays); // Inform the vector<> how many Arrays we'll be adding
+	
+	for (std::size_t i{}; i < numArrays; ++i)
 	{
-		std::println("{}", arrayDoubleTrial[i]);
+		vectorOfArrays.push_back(buildStringArray(numStringsPerArray));
 	}
 }

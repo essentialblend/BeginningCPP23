@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex1\array.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ex2\pair.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ex3\sparsearray.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ex4\doublylinkedlist.ixx">
+    <ClCompile Include="ex4\ex4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ex1\ex1.cpp">

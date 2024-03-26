@@ -8,6 +8,7 @@ class Array
 public:
 	explicit Array<T>(std::size_t arrSize = 0); // Constructor.
 	Array<T>(const Array<T>& arr); // Copy constructor.
+	Array<T>(Array<T>&& movedArr); // Move constructor.
 	
 	Array<T>& operator=(const Array<T>& rhs_arr); // Assignment operator.
 	const T& operator[](std::size_t index) const; // Const subscript operator.
@@ -35,10 +36,20 @@ Array<T>::Array(std::size_t arrSize) : memArrElements{ new T[arrSize] {} }, memA
 template<typename T>
 Array<T>::Array(const Array& arr) : Array(arr.memArrSize)
 {
+	std::println("Array of {} elements copied", memArrSize);
+
 	for (std::size_t i{}; i < memArrSize; ++i)
 	{
 		memArrElements[i] = arr.memArrElements[i];
 	}
+}
+
+template<typename T>
+Array<T>::Array(Array&& movedArr) : memArrSize(movedArr.memArrSize), memArrElements(movedArr.memArrElements)
+{
+	std::println("Array of {} elements moved", movedArr.memArrSize);
+	movedArr.memArrElements = nullptr;
+
 }
 
 template<typename T>
