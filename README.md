@@ -19,7 +19,3 @@ Currently complete:
 - Chapter 13: Operator Overloading
 - Chapter 14: Inheritance
 - Chapter 15: Polymorphism
-- Chapter 16: Runtime Errors and Exceptions
-- Chapter 17: Class Templates
-- Chapter 18: Move Semantics
-- Chapter 19: First-Class Functions
