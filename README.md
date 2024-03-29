@@ -1,9 +1,12 @@
-Exercises from "Beginning C++ 23: From Beginning to Pro". 
+# Beginning C++ 23: From Beginner to Pro
+![](https://github.com/Apress/beginning-cpp23/blob/main/BeginningCpp23.jpg)
+## Status
+This book is now complete as of 29th March 2024.
 
-This is my attempt to gain a more complete understanding of modern C++, after previously learning it from an applicative perspective for games and general programming.
+## Goal
+This repository contains exercises from my study of this fantastic book. The main aim was to learn and gain a more complete understanding of modern C++, after a generally fragmented journey with programming. 
 
-Currently complete:
-
+## Chapters
 - Chapter 1: Basic Ideas
 - Chapter 2: Introducing Fundamental Types of Data
 - Chapter 3: Working with Fundamental Data Types
@@ -26,4 +29,5 @@ Currently complete:
 - Chapter 20: Containers and Algorithms
 - Chapter 21: Constrained Templates and Concepts
 
-As of 29th March 2024, this book is now complete. :)
+## Credit
+[Beginning C++ 23: From Beginner to Pro Github Repository](https://github.com/Apress/beginning-cpp23/tree/main)
