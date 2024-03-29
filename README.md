@@ -23,3 +23,7 @@ Currently complete:
 - Chapter 17: Class Templates
 - Chapter 18: Move Semantics
 - Chapter 19: First-Class Functions
+- Chapter 20: Containers and Algorithms
+- Chapter 21: Constrained Templates and Concepts
+
+As of 29th March 2024, this book is now complete. :)
